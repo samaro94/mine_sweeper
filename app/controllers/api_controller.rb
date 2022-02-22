@@ -30,7 +30,6 @@ class ApiController < ApplicationController
 
     for i in 0..@problem.size-1 do
       for j in 0..@problem.first.size-1 do
-        puts "#{i} - #{j}"
         if @problem[i][j].blank?
 
           mines = []
