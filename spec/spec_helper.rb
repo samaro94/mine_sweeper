@@ -19,7 +19,7 @@ require 'simplecov'
 SimpleCov.start
 
 VCR.configure do |c|
-  c.cassette_library_dir     = 'spec/cassettes'
+  c.cassette_library_dir = 'spec/cassettes'
   # c.stub_with                :fakeweb
   c.default_cassette_options = { :record => :new_episodes }
   c.hook_into :webmock
