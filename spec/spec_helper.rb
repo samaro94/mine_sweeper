@@ -14,6 +14,9 @@
 #
 require 'vcr'
 require 'webmock'
+require 'simplecov'
+
+SimpleCov.start
 
 VCR.configure do |c|
   c.cassette_library_dir     = 'spec/cassettes'
